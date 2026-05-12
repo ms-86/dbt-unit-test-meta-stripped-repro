@@ -3,6 +3,6 @@ name = "unit-test-meta-stripped-repro"
 version = "0.1.0"
 requires-python = ">=3.11,<3.13"
 dependencies = [
-  "dbt-core==1.11.6",
+  "dbt-core==1.11.9",
   "dbt-duckdb==1.10.0",
 ]
