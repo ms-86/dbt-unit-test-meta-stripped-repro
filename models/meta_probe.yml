@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: meta_probe
+    description: Probe model that reads its own config.meta into the SELECT.
+    config:
+      meta:
+        yml_flag: set-from-yml
+
+unit_tests:
+  - name: meta_probe_sees_meta
+    model: meta_probe
+    given: []
+    expect:
+      rows:
+        - sql_block_flag: 'True'
+          sql_block_label: 'set-from-sql'
+          yml_block_flag: 'set-from-yml'
+          meta_dict_repr: "{'sql_flag': True, 'sql_label': 'set-from-sql', 'yml_flag': 'set-from-yml'}"

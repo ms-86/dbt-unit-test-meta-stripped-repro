@@ -1,0 +1,19 @@
+# dbt
+target/
+dbt_packages/
+logs/
+.dbt-state/
+.user.yml
+*.duckdb
+*.duckdb.wal
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+.python-version
+uv.lock
+
+# OS
+.DS_Store
+dbt_internal_packages/

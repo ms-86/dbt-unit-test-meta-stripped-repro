@@ -1,0 +1,5 @@
+name: unit_test_meta_repro
+version: 1.0.0
+config-version: 2
+profile: unit_test_meta_repro
+model-paths: ["models"]
